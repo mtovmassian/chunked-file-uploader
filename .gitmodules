@@ -1,0 +1,3 @@
+[submodule "fake-backend"]
+	path = fake-backend
+	url = https://github.com/mtovmassian/fake-backend.git
