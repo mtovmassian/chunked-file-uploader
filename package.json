@@ -1,0 +1,12 @@
+{
+  "name": "chunked-file-uploader",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "events": "^3.3.0",
+    "parcel": "^2.12.0"
+  }
+}
