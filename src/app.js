@@ -13,10 +13,9 @@ function makeObjectsGlobal(objects) {
 
 function main() {
     //makeObjectsGlobal({ChunkedFileUploader});
-    console.log('Hello world');
     const uploader = ChunkedFileUploader.fromHtmlElement(
         'chunked-file-uploader',
-        'http://localhost:9015/api/v1/ext/users/public/upload/file-chunk',
+        process.env.FILE_CHUNK_UPLOAD_URL,
         104857600,
         'fileInput',
         'uploadButton',

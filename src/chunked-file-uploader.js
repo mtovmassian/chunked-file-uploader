@@ -95,6 +95,7 @@ export class ChunkedFileUploader {
         const response = await fetch(this.chunkUploadUrl, {
             method: 'POST',
             body: formData,
+            headers: {'Authorization': 'Bearer ' + process.env.BEARER_TOKEN}
         });
 
         const percentComplete = ((this.currentChunk + 1) / this.totalChunks) * 100;
